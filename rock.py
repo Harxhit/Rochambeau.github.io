@@ -1,0 +1,53 @@
+import random
+print("-----------Welcome to Rock,Paper and Scissors Game!!-----------\nYour oppenent going to be computer!")
+name = input("Enter player name : ")
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+game_iamges = [ rock , paper , scissors ]
+user_choice = int(input("For rock choose: 0\nFor paper choose : 1\nFor scissors choose : 2\nWhat would be your choice? "))
+print(f"{name} : {user_choice}")
+
+computer_choice = random.randint(0,2)
+print(f"Computer Choose : {computer_choice}")
+
+choices = [rock , paper , scissors]
+
+print(f"{name}:\n{choices[user_choice]}")
+print(f"Computer Choose :\n{choices[computer_choice]}")
+
+if user_choice >=3 and computer_choice < 0 : 
+    print("You chose and invalid number")
+
+elif user_choice > computer_choice :
+    print(f"{name}won..")
+
+elif user_choice < computer_choice : 
+    print(f"{name} lost")
+    print("Try Again")
+
+elif user_choice == computer_choice : 
+    print("Its a draw")

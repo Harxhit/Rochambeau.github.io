@@ -1,0 +1,19 @@
+Rock, Paper, Scissors Game in Python
+
+Project Description:
+Developed a command-line based Rock, Paper, Scissors game using Python. This project demonstrates proficiency in Python programming, including the use of control structures, user input handling, and basic game logic implementation.
+
+Key Features:
+
+User Interaction: Implemented user input functionality allowing players to choose between Rock, Paper, and Scissors.
+Game Logic: Developed game logic to compare user choices against computer-generated choices, determining the winner based on standard rules.
+Randomization: Utilized Python’s random module to generate computer choices, ensuring unpredictable game outcomes.
+Input Validation: Incorporated input validation to handle invalid entries gracefully, prompting users to enter valid choices.
+Replay Functionality: Added an option for users to play multiple rounds without restarting the program.
+User-Friendly Interface: Designed a simple and intuitive text-based interface that guides users through the game.
+Technologies Used:
+
+Python (version 3.12 )
+Python random module for generating random choices
+Control structures such as loops and conditional statements for game flow
+Exception handling for robust input validation
